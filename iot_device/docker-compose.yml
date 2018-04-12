@@ -1,0 +1,38 @@
+#
+# Docker IoT Device
+#
+# The image created with this Dockerfile serves development in the
+# Raspberry Valley makerspace
+#
+# Raspberry Valley Makerspace site: https://raspberry-valley.azurewebsites.net
+#
+
+version: '3'
+services:
+  mqtt:
+    image: "eclipse-mosquitto"
+    container_name: iotdevice-mosquitto
+    ports:
+     - "1883:1883"
+     - "9001:9001"
+    volumes:
+     - mosquitto_data:/mosquitto
+    networks:
+     - "iotnet"
+  nodered:
+    image: "raspberryvalley/nodered:slim"
+    container_name: iotdevice-nodered
+    ports:
+     - "1880:1880"
+    volumes:
+     - nodered_data:/data
+    networks:
+     - "iotnet"
+    links:
+     - "mqtt"
+volumes:
+  nodered_data:
+  mosquitto_data:
+networks:
+  iotnet:
+    driver: bridge
