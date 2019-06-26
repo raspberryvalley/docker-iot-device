@@ -20,7 +20,7 @@ services:
     networks:
      - "iotnet"
   nodered:
-    image: "raspberryvalley/nodered:slim"
+    image: "raspberryvalley/nodered:pc"
     container_name: iotdevice-nodered
     ports:
      - "1880:1880"

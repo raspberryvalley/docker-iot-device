@@ -8,6 +8,22 @@ Read the documentation [here](https://raspberry-valley.azurewebsites.net/IoT-Ras
 
 ![IoT device in action](IoT-Device.jpg)
 
+## Development version
+
+We focus on our Raspberry Pi image. However you may want to test flows on your PC. For your convenience, we have added a docker-compose for PC debugging. This file uses standard images (instead of custom images we made for Raspberry Pi) and is purely intended for testing.
+
+To run, simply navigate to the **iot-device** folder and run:
+
+```bash
+docker-compose up
+```
+
+Your test site is now available at:
+
+```bash
+http://localhost:1880
+```
+
 ## Links
 
 * [Docker IoT Machine - master documentation (Raspberry Valley)](https://raspberry-valley.azurewebsites.net/IoT-Raspberry-Pi-Device-on-Docker/)
