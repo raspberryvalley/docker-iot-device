@@ -8,6 +8,13 @@ Read the documentation [here](https://raspberry-valley.azurewebsites.net/IoT-Ras
 
 ![IoT device in action](IoT-Device.jpg)
 
+The solution is targeted at a good Raspberry Pi experience. However we provide both Raspperry Pi images (custom developed for our use) and a PC solution (custom, for testing purposes).
+
+You can find the related images here:
+
+* [docker-nodered](https://github.com/raspberryvalley/docker-nodered)
+* [docker-mosquitto](https://github.com/raspberryvalley/docker-mosquitto)
+
 ## Development version
 
 We focus on our Raspberry Pi image. However you may want to test flows on your PC. For your convenience, we have added a docker-compose for PC debugging. This file uses standard images (instead of custom images we made for Raspberry Pi) and is purely intended for testing.
@@ -22,6 +29,12 @@ Your test site is now available at:
 
 ```bash
 http://localhost:1880
+```
+
+Once you're done, you can remove all traces of your tests (including containers) by using the 'down' command, as shown below. Please note, all traces of your work are lost! Next time you start from scratch.
+
+```bash
+docker-compose down
 ```
 
 ## Links
