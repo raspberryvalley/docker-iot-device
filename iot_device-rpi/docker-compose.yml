@@ -12,6 +12,7 @@ services:
   mqtt:
     image: "raspberryvalley/mosquitto:rpi"
     container_name: iotdevice-mosquitto
+    restart: always
     ports:
      - "1883:1883"
      - "9001:9001"
@@ -22,6 +23,7 @@ services:
   nodered:
     image: "raspberryvalley/nodered:rpi"
     container_name: iotdevice-nodered
+    restart: always
     ports:
      - "1880:1880"
     volumes:
