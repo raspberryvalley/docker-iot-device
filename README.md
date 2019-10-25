@@ -1,7 +1,5 @@
 # Docker IoT Machine
 
-We are a maker community in Karlskrona, Sweden. See our site for other ideas and activities: [Raspberry Valley](https://raspberry-valley.azurewebsites.net).
-
 This Docker configuration creates an IoT Raspberry Pi device as a foundation for IoT development in our makerspace. Before using Docker, we configured our devices the hard way - see our original configuration here: [IoT Raspberry Pi Device](https://raspberry-valley.azurewebsites.net/IoT-Raspberry-Pi-Device/). The same can be achieved using [Docker](https://www.docker.com) and [Docker Compose](https://docs.docker.com/compose/), which is achieved in this project.
 
 Read the documentation [here](https://raspberry-valley.azurewebsites.net/IoT-Raspberry-Pi-Device-on-Docker/)
@@ -36,6 +34,14 @@ Once you're done, you can remove all traces of your tests (including containers)
 ```bash
 docker-compose down
 ```
+
+## About
+
+Raspberry Valley is a maker community in Karlskrona, Sweden, sponsored by [Dynapac](https://dynapac.com/en). We run makerspaces every week, working with Raspberry Pis, Arduinos and other interesting hardware.
+
+This repository is here to support our community of makers. A lot of our achievements are based and inspired by the community at large. We wish to pay back and share our experiences and lessons learned. Join us!
+
+You can find our pages here: [Raspberry Valley](https://raspberry-valley.azurewebsites.net). You can also join us on [Twitter](https://twitter.com/RaspberryValley) or check [Docker Hub](https://hub.docker.com/r/raspberryvalley/) for images of interest.
 
 ## Links
 
